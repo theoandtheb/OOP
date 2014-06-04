@@ -1,3 +1,9 @@
+class Person
+	attr_accessor :name
+	def initialize(name)
+		:name = name
+end
+
 class Student
 	def learn
 		puts "I get it!"
