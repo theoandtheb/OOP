@@ -1,12 +1,15 @@
 class Person
 	attr_accessor :name
-	def initialize(name)
-		:name = name
+	def initialize
+		:name
+	end
+	
+	def hey
+		p "Hi, my name is #{@name}"
+	end
 end
 
-def hey(:name)
-	p "Hi, my name is #{:name}"
-end
+
 
 class Student
 	def learn
@@ -19,3 +22,7 @@ class Instructor
 		puts "Everything in Ruby is an Object"
 	end
 end
+
+chris = Person.new
+chris.name = "Chris"
+chris.hey
